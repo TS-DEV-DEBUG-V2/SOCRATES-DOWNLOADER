@@ -30,7 +30,8 @@
 ![Cross Platform](https://img.shields.io/badge/cross--platform-no-blue?style=for-the-badge)
 
 ---
-
+# NOTE
+You need to get an API key from https://manifest.morrenus.xyz/ and also you need to join their discord
 ## Overview
 
 **SOCRATES-DL** is a GUI-based game downloader designed for speed, simplicity, and control. It provides a streamlined interface for downloading and managing game files while maintaining a clean and efficient user experience.

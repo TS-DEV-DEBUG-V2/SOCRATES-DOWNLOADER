@@ -1,16 +1,15 @@
 {
   "name": "socrates-dl",
   "version": "1.0.0",
-  "description": "SOCRATES-DL -- WSG -- V2",
+  "description": "SOCRATES-DL -- WSG -- V1 | DepotDownloader GUI",
+  "author": "WSG",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
     "build": "electron-builder"
   },
-  "dependencies": {
-    "electron": "^28.0.0"
-  },
   "devDependencies": {
+    "electron": "^28.0.0",
     "electron-builder": "^24.0.0"
   },
   "build": {

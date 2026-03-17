@@ -6,10 +6,12 @@
 
 ---
 
-![Download](https://img.shields.io/badge/Download-Latest-blue?style=for-the-badge)
-![Version](https://img.shields.io/badge/version-2.0-orange?style=for-the-badge)
+## Badges
+
+[![Download](https://img.shields.io/badge/Download-Latest-blue?style=for-the-badge)](https://github.com/TS-DEV-DEBUG-V2/SOCRATES-DOWNLOADER/releases)
+[![Version](https://img.shields.io/github/v/release/TS-DEV-DEBUG-V2/SOCRATES-DOWNLOADER?style=for-the-badge)](https://github.com/TS-DEV-DEBUG-V2/SOCRATES-DOWNLOADER/releases)
 ![Status](https://img.shields.io/badge/status-active-success?style=for-the-badge)
-![License](https://img.shields.io/badge/license-MIT-green?style=for-the-badge)
+[![License](https://img.shields.io/github/license/TS-DEV-DEBUG-V2/SOCRATES-DOWNLOADER?style=for-the-badge)](https://github.com/TS-DEV-DEBUG-V2/SOCRATES-DOWNLOADER/blob/main/LICENSE)
 ![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux-lightgrey?style=for-the-badge)
 ![GUI](https://img.shields.io/badge/interface-GUI-blueviolet?style=for-the-badge)
 ![Python](https://img.shields.io/badge/Python-V1-blue?style=for-the-badge\&logo=python)
@@ -20,20 +22,20 @@
 ![Maintained](https://img.shields.io/badge/maintained-yes-success?style=for-the-badge)
 ![Open Source](https://img.shields.io/badge/open--source-true-blue?style=for-the-badge)
 ![Performance](https://img.shields.io/badge/performance-optimized-orange?style=for-the-badge)
-![Downloads](https://img.shields.io/badge/downloads-global-blue?style=for-the-badge)
+![Downloads](https://img.shields.io/github/downloads/TS-DEV-DEBUG-V2/SOCRATES-DOWNLOADER/total?style=for-the-badge)
 ![Security](https://img.shields.io/badge/security-stable-green?style=for-the-badge)
 ![Updates](https://img.shields.io/badge/updates-frequent-yellow?style=for-the-badge)
 ![Modules](https://img.shields.io/badge/modules-extensible-purple?style=for-the-badge)
-![CLI Support](https://img.shields.io/badge/CLI-supported-lightgrey?style=for-the-badge)
-![Cross Platform](https://img.shields.io/badge/cross--platform-yes-blue?style=for-the-badge)
+![CLI Support](https://img.shields.io/badge/CLI-not--supported-lightgrey?style=for-the-badge)
+![Cross Platform](https://img.shields.io/badge/cross--platform-no-blue?style=for-the-badge)
 
 ---
 
 ## Overview
 
-**SOCRATES-DL** is a modern, high-performance game downloader built with a strong focus on usability, flexibility, and powerful GUI-driven workflows. It is designed to provide a seamless downloading experience while maintaining full control over file handling and system performance.
+**SOCRATES-DL** is a GUI-based game downloader designed for speed, simplicity, and control. It provides a streamlined interface for downloading and managing game files while maintaining a clean and efficient user experience.
 
-The project evolves across two major versions, each built with different technologies to explore performance, usability, and cross-platform capabilities.
+The project is built across two distinct versions, each using different technologies to explore performance, UI design, and extensibility.
 
 ---
 
@@ -41,91 +43,84 @@ The project evolves across two major versions, each built with different technol
 
 ### V1 — Python (CustomTkinter)
 
-The first version of SOCRATES-DL is developed in Python using **CustomTkinter**, delivering a clean and responsive native desktop interface.
+The first version is built using Python with **CustomTkinter**, focusing on simplicity and performance.
 
-**Key Characteristics:**
+**Highlights:**
 
-* Lightweight and efficient
-* Native desktop feel
-* Fast startup and low resource usage
-* Simple and focused UI design
-* Ideal for low-end systems
+* Lightweight desktop application
+* Very Slow
+* Minimal resource usage
+* Clean and simple GUI
+* Ideal for basic downloading tasks
 
 ---
 
 ### V2 — Node.js + Electron
 
-The second version transitions to a modern stack using Node.js and Electron, enabling a more dynamic and scalable interface.
+The second version is built using Node.js and Electron, offering a more advanced and scalable interface.
 
-**Key Characteristics:**
+**Highlights:**
 
-* Fully featured desktop application powered by web technologies
-* Enhanced UI/UX with modern design capabilities
-* Easier cross-platform deployment
-* Supports advanced features and integrations
-* More extensible architecture
+* Modern desktop UI powered by web technologies
+* More flexible and expandable architecture
+* Improved UI/UX design capabilities
+* Better suited for future feature expansion
 
 ---
 
 ## Features
 
-### High-Speed Downloads
-
-Optimized networking ensures maximum throughput with stable connections and minimal interruptions.
-
-### Graphical User Interface
-
-Both versions provide a full GUI experience:
-
-* V1: Minimal, efficient interface
-* V2: Rich, modern desktop UI
-
-### Smart File Handling
-
-Automatic organization, naming, and directory management keep downloads clean and structured.
-
-### Resume Support
-
-Downloads can resume automatically after interruption without losing progress.
-
-### Modular Design
-
-Easily extend functionality through modules and custom integrations.
+* High-speed downloading with stable performance
+* Fully graphical user interface (no CLI required)
+* Organized file handling and directory management
 
 ---
 
 ## Installation
+* Download the latest release of v2 or v1
+* for v1 just launch SOCRATES-DL-WSG-V1.exe NOTE, v1 has NO support
+* for v2 launch SOCRATES-DL.exe, This is the best version
 
-### V1 (Python)
+### Building v2 from source
 
-```bash
-git clone https://github.com/yourusername/socrates-dl.git
-cd socrates-dl/v1
-pip install -r requirements.txt
+```bash id="repo1"
+git clone https://github.com/TS-DEV-DEBUG-V2/SOCRATES-DOWNLOADER.git
+cd SOCRATES-DOWNLOADER
+cd v2
+install.bat
+install-for-building.bat
+build.bat
+```
+
+---
+
+### Run V1 (Python) from source
+
+```bash id="repo2"
+cd v1
+pip install customtkinter
 python main.py
 ```
 
 ---
 
-### V2 (Electron)
+### Run V2 (no building to exe)
 
-```bash
-git clone https://github.com/yourusername/socrates-dl.git
-cd socrates-dl/v2
-npm install
-npm start
+```bash id="repo3"
+cd v2
+install.bat
+start.bat
 ```
 
 ---
 
 ## Project Structure
 
-```
-socrates-dl/
-│── v1/                # Python (CustomTkinter)
-│── v2/                # Node.js + Electron
+```id="repo4"
+SOCRATES-DOWNLOADER/
+│── v1/          # Python (CustomTkinter GUI)
+│── v2/          # better version (built with elecronn)
 │── assets/
-│── docs/
 │── README.md
 ```
 
@@ -133,29 +128,19 @@ socrates-dl/
 
 ## Roadmap
 
-* Integrated download manager dashboard
-* Plugin marketplace
-* Cloud sync support
-* Built-in update system
-* Advanced scheduling system
+* Improved UI design for V2
+* Performance optimizations
 
 ---
 
 ## Contributing
 
-Contributions are welcome. Feel free to fork the project and submit pull requests with clear and detailed descriptions.
+Contributions are welcome. Fork the repository and submit a pull request with clear changes and explanations.
 
 ---
 
 ## License
 
-This project is licensed under the MIT License.
+See the LICENSE file in the repository for details.
 
 ---
-
-## Disclaimer
-
-SOCRATES-DL is intended for educational and legitimate use only. Users are responsible for ensuring compliance with all applicable laws and content distribution policies.
-
----
-

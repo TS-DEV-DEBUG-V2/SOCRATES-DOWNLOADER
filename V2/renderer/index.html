@@ -79,10 +79,10 @@
     line-height: 1;
   }
 
-  /* ─── Layout ────────────────────────────────────────────── */
+
   #shell { display: flex; height: calc(100vh - 38px); overflow: hidden; }
 
-  /* ─── Sidebar ───────────────────────────────────────────── */
+
   #sidebar {
     width: 220px;
     flex-shrink: 0;
@@ -161,12 +161,11 @@
     flex-shrink: 0;
   }
 
-  /* ─── Content area ──────────────────────────────────────── */
+
   #content { flex: 1; overflow: hidden; position: relative; }
   .page { display: none; height: 100%; overflow: hidden; flex-direction: column; }
   .page.active { display: flex; }
 
-  /* ─── Scrollable area ───────────────────────────────────── */
   .scroll-area {
     flex: 1; overflow-y: auto; overflow-x: hidden;
     scrollbar-width: thin;
@@ -176,19 +175,19 @@
   .scroll-area::-webkit-scrollbar-track { background: transparent; }
   .scroll-area::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
 
-  /* ─── Page header ───────────────────────────────────────── */
+
   .page-header { padding: 28px 32px 0; flex-shrink: 0; }
   .page-title { font-size: 26px; font-weight: 800; color: var(--txt0); letter-spacing: -0.01em; }
   .page-sub { font-size: 13px; color: var(--txt2); margin-top: 4px; font-weight: 400; }
 
-  /* ─── Cards ─────────────────────────────────────────────── */
+  
   .card {
     background: var(--card);
     border: 1px solid var(--border);
     border-radius: var(--radius);
   }
 
-  /* ─── Inputs ────────────────────────────────────────────── */
+ 
   input[type=text], input[type=password], input[type=number] {
     background: var(--bg2); border: 1px solid var(--border2);
     color: var(--txt0); font-family: var(--font-ui); font-size: 13px;
@@ -200,7 +199,7 @@
   }
   input::placeholder { color: var(--txt2); }
 
-  /* ─── Buttons ───────────────────────────────────────────── */
+  
   .btn {
     display: inline-flex; align-items: center; justify-content: center;
     gap: 6px; cursor: pointer; border: none; border-radius: var(--radius-sm);
@@ -224,7 +223,7 @@
   .btn-stop { background: #2a0f0f; color: var(--red); }
   .btn-stop:hover:not(:disabled) { background: #3a1a1a; }
 
-  /* ─── Toggle switch ─────────────────────────────────────── */
+ 
   .toggle-wrap { display: flex; align-items: center; gap: 8px; cursor: pointer; user-select: none; }
   .toggle-wrap input[type=checkbox] { display: none; }
   .toggle-track {
@@ -240,14 +239,14 @@
   .toggle-wrap input:checked + .toggle-track .toggle-thumb { transform: translateX(16px); background: #001a26; }
   .toggle-label { font-size: 12px; color: var(--txt1); }
 
-  /* ─── Section label ─────────────────────────────────────── */
+ 
   .section-label {
     font-size: 11px; font-weight: 700; color: var(--accent);
     letter-spacing: 0.08em; text-transform: uppercase;
     margin-bottom: 6px;
   }
 
-  /* ─── Status badge ──────────────────────────────────────── */
+
   .badge {
     display: inline-block; padding: 2px 9px; border-radius: 20px;
     font-size: 11px; font-weight: 700; letter-spacing: 0.04em;
@@ -255,9 +254,7 @@
   .badge-avail   { background: #0d2a1a; color: #4caf50; }
   .badge-unavail { background: #1a1a2c; color: var(--txt3); }
 
-  /* ══════════════════════════════════════════════════════════
-     SEARCH PAGE
-  ══════════════════════════════════════════════════════════ */
+ 
   #search-bar {
     display: flex; align-items: center;
     background: #12121e; border: 1px solid var(--border2);
@@ -293,9 +290,7 @@
   .result-actions { padding: 0 16px; flex-shrink: 0; }
   #fetch-status { padding: 2px 34px 8px; font-size: 12px; color: var(--accent); flex-shrink: 0; min-height: 22px; }
 
-  /* ══════════════════════════════════════════════════════════
-     DOWNLOADER PAGE
-  ══════════════════════════════════════════════════════════ */
+
   .dl-body { padding: 28px 28px 28px; display: flex; flex-direction: column; gap: 20px; }
   #game-picker-card { }
   .picker-placeholder { padding: 28px; text-align: center; font-size: 13px; color: var(--txt3); }
@@ -334,9 +329,7 @@
   #log-box::-webkit-scrollbar { width: 6px; }
   #log-box::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
 
-  /* ══════════════════════════════════════════════════════════
-     QUOTA PAGE
-  ══════════════════════════════════════════════════════════ */
+
   .quota-body { padding: 40px 60px; max-width: 700px; }
   .stat-row { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0; padding: 24px 28px 0; }
   .stat-col { text-align: center; }
@@ -352,9 +345,7 @@
   .quota-btn-row { display: flex; align-items: center; gap: 16px; margin-top: 24px; }
   #quota-status { font-size: 12px; color: var(--txt2); }
 
-  /* ══════════════════════════════════════════════════════════
-     SETTINGS PAGE
-  ══════════════════════════════════════════════════════════ */
+
   .settings-body { padding: 40px 60px; max-width: 680px; display: flex; flex-direction: column; gap: 20px; }
   .settings-card-inner { padding: 20px 24px; }
   .settings-card-title { font-size: 14px; font-weight: 700; color: var(--txt0); margin-bottom: 4px; }
@@ -369,7 +360,7 @@
   #settings-status { font-size: 12px; color: var(--green); }
   #clear-cache-status { font-size: 11px; color: var(--txt2); }
 
-  /* ─── Toast ─────────────────────────────────────────────── */
+
   #toast {
     position: fixed; bottom: 20px; right: 20px;
     background: var(--bg3); border: 1px solid var(--border2);
@@ -383,7 +374,7 @@
 </head>
 <body>
 
-<!-- Titlebar -->
+
 <div id="titlebar">
   <div class="title-text">SOCRATES-DL ─ WSG ─ V2</div>
   <div class="win-btns">
@@ -394,7 +385,7 @@
 </div>
 
 <div id="shell">
-  <!-- Sidebar -->
+
   <div id="sidebar">
     <div id="logo-area">
       <div class="logo-main">
@@ -429,10 +420,10 @@
     <div id="sidebar-footer">manifest.morrenus.xyz</div>
   </div>
 
-  <!-- Content -->
+
   <div id="content">
 
-    <!-- ════════════════ SEARCH ════════════════ -->
+
     <div class="page active" id="page-search">
       <div class="page-header">
         <div class="page-title">Search Games</div>
@@ -450,7 +441,7 @@
       <div id="fetch-status"></div>
     </div>
 
-    <!-- ════════════════ DOWNLOADER ════════════════ -->
+
     <div class="page" id="page-downloader">
       <div class="scroll-area">
         <div class="dl-body">
@@ -513,7 +504,7 @@
       </div>
     </div>
 
-    <!-- ════════════════ QUOTA ════════════════ -->
+
     <div class="page" id="page-quota">
       <div class="scroll-area">
         <div class="quota-body">
@@ -561,7 +552,6 @@
       </div>
     </div>
 
-    <!-- ════════════════ SETTINGS ════════════════ -->
     <div class="page" id="page-settings">
       <div class="scroll-area">
         <div class="settings-body">
@@ -630,7 +620,7 @@
 <div id="toast"></div>
 
 <script>
-// ─── State ─────────────────────────────────────────────────────────────────
+
 let cfg = {};
 let luaDepots = {};
 let manifestFiles = [];
@@ -643,7 +633,7 @@ let selectedManifestId = '';
 let outputDir = '';
 let tmpKeyPath = null;
 
-// ─── Init ─────────────────────────────────────────────────────────────────
+// init stuffs
 (async () => {
   cfg = await window.api.loadConfig();
   document.getElementById('api-key-input').value      = cfg.api_key || '';
@@ -652,15 +642,15 @@ let tmpKeyPath = null;
   const defaultDir = await window.api.defaultManifestDir();
   document.getElementById('manifest-dir-input').value = cfg.manifest_save_dir || defaultDir;
 
-  // Load sidebar image
+
   loadSidebarImage();
   loadAppIcon();
 
-  // Listen for log lines from main process
+
   window.api.onLogLine(line => appendLog(line));
 })();
 
-// ─── Sidebar image + icon ─────────────────────────────────────────────────
+
 async function loadSidebarImage() {
   const imgEl = document.getElementById('sidebar-image');
   const data = await window.api.fetchImage('https://files.catbox.moe/v6oorg.jfif');
@@ -679,7 +669,7 @@ async function loadAppIcon() {
   }
 }
 
-// ─── Navigation ──────────────────────────────────────────────────────────
+
 function showPage(name) {
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
   document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
@@ -688,7 +678,7 @@ function showPage(name) {
   if (name === 'quota') refreshQuota();
 }
 
-// ─── Toast ────────────────────────────────────────────────────────────────
+
 function toast(msg, duration = 2500) {
   const el = document.getElementById('toast');
   el.textContent = msg;
@@ -697,12 +687,12 @@ function toast(msg, duration = 2500) {
   el._t = setTimeout(() => el.classList.remove('show'), duration);
 }
 
-// ─── Password visibility ──────────────────────────────────────────────────
+
 function togglePasswordVis(inputId, chk) {
   document.getElementById(inputId).type = chk.checked ? 'text' : 'password';
 }
 
-// ─── SEARCH ──────────────────────────────────────────────────────────────
+
 async function doSearch() {
   const key = (cfg.api_key || '').trim();
   if (!key) { toast('Go to Settings and enter your API key first.'); return; }
@@ -770,7 +760,7 @@ async function fetchManifest(appId, gameName, encodedImg) {
   document.getElementById('fetch-status').textContent = `Fetching ${gameName}…`;
   fetchedAppId = appId; fetchedGameName = gameName; fetchedGameImage = imgUrl;
 
-  // Clear picker
+
   document.getElementById('picker-rows').innerHTML = '';
   document.getElementById('picker-placeholder').style.display = '';
 
@@ -789,7 +779,7 @@ async function fetchManifest(appId, gameName, encodedImg) {
   }
 }
 
-// ─── DOWNLOADER ───────────────────────────────────────────────────────────
+
 function rebuildPicker() {
   const rows = document.getElementById('picker-rows');
   rows.innerHTML = '';
@@ -807,7 +797,7 @@ function rebuildPicker() {
     }
   }
 
-  // Only show first depot
+
   if (downloadable.length === 0) {
     document.getElementById('picker-placeholder').style.display = '';
     return;
@@ -835,13 +825,13 @@ function rebuildPicker() {
       onclick="selectDepotFromRow('picker-row-${did}','picker-ind-${did}')">Select</button>`;
   rows.appendChild(row);
 
-  // Lazy load picker image
+
   if (fetchedGameImage) {
     const img = row.querySelector('.picker-lazy');
     window.api.fetchImage(fetchedGameImage).then(data => { if (data) img.src = data; }).catch(()=>{});
   }
 
-  // Auto-select
+
   selectDepot(did, mf || '', 0, `picker-ind-${did}`);
 }
 
@@ -855,7 +845,7 @@ function findManifestFor(depotId) {
 
 function parseManifestFilename(fn) {
   const bn = fn.split(/[/\\]/).pop();
-  // Match both standard depotId_manifestId.manifest and prefixed e.g. e4401_5817090063491018460.manifest
+  // match both standard depotId_manifestId.manifest and prefixed, for example e4401_5817090063491018460.manifest
   const m = bn.match(/^[a-zA-Z]*(\d+)_(\d+)\.manifest$/);
   return m ? [m[1], m[2]] : [null, null];
 }
@@ -1023,7 +1013,7 @@ async function refreshQuota() {
   }
 }
 
-// ─── SETTINGS ────────────────────────────────────────────────────────────
+
 async function pickManifestDir() {
   const p = await window.api.pickDir();
   if (p) document.getElementById('manifest-dir-input').value = p;
@@ -1059,7 +1049,7 @@ async function clearManifestCache() {
   }
 }
 
-// ─── Helpers ──────────────────────────────────────────────────────────────
+
 function escHtml(s) {
   return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 }

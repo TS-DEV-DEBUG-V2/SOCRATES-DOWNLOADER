@@ -4,10 +4,6 @@
   <img src="https://private-user-images.githubusercontent.com/266275506/565099780-3e4bb4c6-433d-43e6-bc9c-88695d5d7bef.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Nzg4NzAwNzIsIm5iZiI6MTc3ODg2OTc3MiwicGF0aCI6Ii8yNjYyNzU1MDYvNTY1MDk5NzgwLTNlNGJiNGM2LTQzM2QtNDNlNi1iYzljLTg4Njk1ZDVkN2JlZi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNTE1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDUxNVQxODI5MzJaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0xMmU3OGE5M2U3M2FhYWFkNjI3ZTMyNTM0YTRmMWQwMDI2OGY5MDMzYTNlYmYyNDdkZDQyZGZhY2ZkYmVlMjZkJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.wmCzN-kSx4dvU5vUw-4URxxrsyC9mKIVlzrqCqGg2TM" alt="SOCRATES-DL Preview">
 </p>
 
----
-
-## Badges
-
 [![Download](https://img.shields.io/badge/Download-Latest-blue?style=for-the-badge)](https://github.com/TS-DEV-DEBUG-V2/SOCRATES-DOWNLOADER/releases)
 [![Version](https://img.shields.io/github/v/release/TS-DEV-DEBUG-V2/SOCRATES-DOWNLOADER?style=for-the-badge)](https://github.com/TS-DEV-DEBUG-V2/SOCRATES-DOWNLOADER/releases)
 ![Status](https://img.shields.io/badge/status-active-success?style=for-the-badge)
